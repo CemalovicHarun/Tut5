@@ -1,4 +1,4 @@
-package sample;
+package ba.unsa.etf.rs.tut5;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
