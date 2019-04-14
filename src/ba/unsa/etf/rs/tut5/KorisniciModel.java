@@ -11,4 +11,29 @@ public class KorisniciModel {
         this.Korisnici = FXCollections.observableArrayList();
         this.trenutniKorisnik=new SimpleObjectProperty<>();
     }
+
+    public ObservableList<Korisnik> getKorisnici() {
+        return Korisnici;
+    }
+
+    public void setKorisnici(ObservableList<Korisnik> korisnici) {
+        Korisnici = korisnici;
+    }
+
+    public Korisnik getTrenutniKorisnik() {
+        return trenutniKorisnik.get();
+    }
+
+    public SimpleObjectProperty<Korisnik> trenutniKorisnikProperty() {
+        return trenutniKorisnik;
+    }
+
+    public void setTrenutniKorisnik(Korisnik trenutniKorisnik) {
+        this.trenutniKorisnik.set(trenutniKorisnik);
+    }
+    public void napuni(){
+        String ime;
+        korisnici.add(new Korisnik(ime:"Šemsudin"))
+    }
 }
+
